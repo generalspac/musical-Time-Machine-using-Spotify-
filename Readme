@@ -1,0 +1,17 @@
+Setup
+    This project uses environment variables to connect to the Spotify API.
+    You must create a .env file in the root folder of the project with the following values:
+        CLIENT_ID=your_spotify_client_id
+        CLIENT_SECRET=your_spotify_client_secret
+        USERNAME=your_spotify_username
+        CACHE_PATH=file_for_your_login_token
+
+    --How to get the values
+    Go to the Spotify Developer Dashboard:
+    https://developer.spotify.com/dashboard
+    Create a new app.
+    Copy the Client ID and Client Secret into the .env file.
+    Set the Redirect URI in the Spotify dashboard (for example:
+    http://localhost:8888/callback).
+    Put your Spotify account username in USERNAME.
+    CACHE_PATH is the file where the login token will be stored. You can keep .cache as the default.
